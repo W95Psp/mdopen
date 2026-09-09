@@ -141,6 +141,16 @@ npm install   # or: bun install
 ln -s "$PWD/render.mjs" ~/.local/bin/md
 ```
 
+### Nix
+
+Run from a checkout:
+
+```sh
+nix run . -- architecture.md
+```
+
+Supports Linux and macOS (x86_64 and aarch64).
+
 ## A note on trust
 
 The rendered page executes any raw HTML the markdown contains — that's how
